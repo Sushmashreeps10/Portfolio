@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sushmashree PS</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00838f;
+            padding: 10px 15px;
+            color: white;
+            /* font-size: 0.9em; */
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            /* font-size: 2.5em; */
+            color: #00796b;
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .skills {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            padding: 8px 0;
+            font-weight: bold;
+            color: #004d40;
+        }
+
+        .footer {
+            background-color: #00838f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>About Me</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="about-content">
+        <h2>Hi, I'm Sushmashree PS</h2>
+        <p>I am a passionate software engineer with a B.Tech in Computer Science and Engineering (Data Science) from Presidency University.</p>
+        <p>I love developing web applications and solving complex problems through coding.</p>
+        
+        <div class="skills">
+            <h2>Technical Skills & Interests</h2>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript</li>
+                <li><strong>Backend:</strong> Python, Java</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Developer Tools:</strong> VS Code, PyCharm, Jupyter Notebook, GitHub, Google Docs</li>
+                <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem-Solving, Leadership</li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Sushmashree PS. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('About page loaded successfully!');
+        });
+    </script>
+</body>
+</html>
