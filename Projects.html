@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects - Sushmashree PS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .navbar h1 {
+      font-size: 1.8rem;
+      color: #00bcd4;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #00bcd4;
+    }
+
+    .projects-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .projects-section h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border: 2px solid rgb(112, 109, 109);
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    /* #09f520; */
+    .project-card h3 {
+      color: #00bcd4;
+      margin: 15px 0 10px;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #00bcd4;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      .project-card {
+        width: 90%;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+      }
+      .navbar ul li {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>Sushmashree PS</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="project-container">
+
+      <div class="project-card">
+        <img src="e-commers.jpg" alt="E-commerce Website">
+        <h3>E-commerce Website</h3>
+        <p>Built a responsive online store interface with dynamic product updates using HTML, CSS, and JavaScript. Includes interactive cart functionality.</p>
+        <a href="https://github.com/Sushmashreeps10/FrontendMastery" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="github.jpg" alt="GitHub Search App">
+        <h3>GitHub Profile Search</h3>
+        <p>Integrated GitHub API to enable dynamic user profile searches. Clean UI with responsive elements and fast lookup features.</p>
+        <a href="https://github.com/Sushmashreeps10/web-development/tree/main/29.%20Github%20Profile%20App" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="acernut.jpg" alt="Arecanut Disease Detection">
+        <h3>Arecanut Disease Detection</h3>
+        <p>Final year project using AI and Python-based image classification to detect diseases in arecanut leaves—improving agriculture solutions.</p>
+        <a href="https://github.com/Sushmashreeps10/arecanut-diseases-detection" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="google_search.jpg" alt="Google Clone">
+        <h3>Google Search Clone</h3>
+        <p>Built a custom search engine clone using Google Custom Search API. Minimalistic design with real-time search capability.</p>
+        <a href="https://github.com/Sushmashreeps10/web-development/tree/main/8.%20Google%20Search%20Engine%20Clone" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="projects-section">
+    <h2>My Certificates</h2>
+    <div class="project-container">
+
+      <div class="project-card">
+        <img src="infosys.jpg" alt="Cloud Certificate">
+        <h3>Cloud Computing</h3>
+        <p>Certified in cloud infrastructure and deployment by Infosys Springboard—focused on AWS, scalability, and virtualization concepts.</p>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7229572432980811776/" class="btn">View Certificate</a>
+      </div>
+
+      <div class="project-card">
+        <img src="cognizant.jpg" alt="AI Simulation">
+        <h3>AI Job Simulation</h3>
+        <p>Hands-on AI project simulation experience from Cognizant. Includes recommendation systems, NLP, and ethical AI practices.</p>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7209940805371793411/" class="btn">View Certificate</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Internship.jpg" alt="Internship">
+        <h3>Internship in Web Development</h3>
+        <p>Completed internship at Orsu Evilcorp working on frontend and backend stacks—developing scalable and user-friendly web applications.</p>
+        <a href="https://credential.certifyme.online/verify/5920db2f17577" class="btn">View Certificate</a>
+      </div>
+
+      <div class="project-card">
+        <img src="accentur.jpg" alt="Data Analytics Certificate">
+        <h3>Data Analytics & Visualization</h3>
+        <p>Earned a certificate from Accenture for completing the simulation involving Tableau dashboards and data storytelling practices.</p>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7209936070140940288/" class="btn">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sushmashree PS | Contact: +91 7019****** | Email: Sushre10@gmail.com</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Projects Page Loaded Successfully");
+    });
+  </script>
+</body>
+</html>

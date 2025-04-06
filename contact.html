@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Sushmashree PS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 2px 10px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    }
+
+    .navbar h1 {
+      font-size: 1.8rem;
+      color: #00bcd4;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #00bcd4;
+    }
+
+    .projects-section {
+    text-align: center;
+    padding: 20px 10px; /* Reduced padding from 60px to 30px */
+    flex-grow: 1;
+    }
+    .projects-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    .projects-section p {
+      font-size: 1rem;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border: 2px solid #00bcd4;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+    }
+
+    .project-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .project-card h3 {
+      color: #00e5ff;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #00bcd4;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .project-card {
+        width: 90%;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+      }
+      .navbar ul li {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h1>Sushmashree PS</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="projects-section">
+    <h2>Contact Me</h2>
+    <p>Get in touch through the platforms below:</p>
+    
+    <div class="project-container">
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo">
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/sushmashree-ps-816991296/" target="_blank" class="btn">Visit</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub Logo">
+        <h3>GitHub</h3>
+        <a href="https://github.com/Sushmashreeps10" target="_blank" class="btn">Visit</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Instagram Logo">
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/sushma__.10/" target="_blank" class="btn">Visit</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXK5g7trNu9TmrGh5X9wSTPSbYUQEBmzPPaQ&s" alt="HackerRank Logo">
+        <h3>HackerRank</h3>
+        <a href="https://www.hackerrank.com/profile/sushre10" target="_blank" class="btn">Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sushmashree PS. All rights reserved.</p>
+    <p>📧 Email: <a href="mailto:Sushre10@gmail.com">Sushre10@gmail.com</a> | 📞 Phone: +91 7019******</p>
+  </footer>
+
+</body>
+</html>

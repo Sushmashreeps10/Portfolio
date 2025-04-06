@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00838f;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+.page {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Home Section */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #00838f;
+}
+
+.resume-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resume-button:hover {
+    background-color: #00251a;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+}
+
+#contact ul li a:hover {
+    color: #004d40;
+}
+
+/* Footer */
+.footer {
+    background-color: #00838f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    padding-top: 60px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    border: 4px solid #007bff;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-photo {
+    border-radius: 50%;
+    border: 4px solid #007bff;
+  }
+  

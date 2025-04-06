@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sushmashree PS - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+    .navbar {
+      background-color: #1f1f1f;
+      padding: 10px 20px;
+    }
+    .navbar-nav {
+      margin-left: auto;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #00bcd4 !important;
+    }
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: #00bcd4 !important;
+    }
+
+    .page {
+      padding-top: 80px;
+    }
+
+    .profile-photo {
+      border-radius: 50%;
+      border: 4px solid #00bcd4;
+      max-width: 250px;
+      transition: 0.3s;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .info-box {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    .border-blue {
+      border-left: 4px solid #00bcd4;
+    }
+    .border-green {
+      border-left: 4px solid #28a745;
+    }
+    .border-yellow {
+      border-left: 4px solid #ffc107;
+    }
+    .border-cyan {
+      border-left: 4px solid #17a2b8;
+    }
+
+    a {
+      color: #0dcaf0;
+      text-decoration: none;
+    }
+
+    h2.section-heading {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 600;
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #ffc107;
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #0dcaf0;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function showPage(id) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function accessDenied() {
+      alert("Resume access is currently disabled.");
+    }
+
+    window.onload = () => {
+      showPage('home');
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sushmashree PS</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html" onclick="showPage('home')">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" onclick="showPage('about')">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="Projects.html" onclick="showPage('projects')">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+  <section id="home" class="page">
+    <div class="container">
+      <!-- <h2 class="section-heading">👋 Welcome to My Digital Space</h2> -->
+
+      <div class="row align-items-center mb-4">
+        <div class="col-md-4 text-center">
+          <img src="HeroImage.jpg" alt="Sushmashree PS" class="img-fluid profile-photo mb-3">
+          <br>
+          <button class="btn btn-outline-info mt-2" onclick="accessDenied()">My Resume</button>
+        </div>
+        <div class="col-md-8">
+          <div class="info-box border-blue">
+            <h4 class="text-info">🎓 B.Tech Information</h4>
+            <p><strong>University:</strong> Presidency University</p>
+            <p><strong>CGPA:</strong> 7.60</p>
+            <p><strong>Branch:</strong> Computer Science and Engineering (Data Science)</p>
+            <p class="mt-3">🚀 I'm driven by <span class="highlight">passion</span> and fueled by <span class="highlight">curiosity</span>. I love turning ideas into meaningful tech.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="info-box border-green">
+            <h5>🏫 Schooling</h5>
+            <p><strong>School:</strong> Carmel Jyothi High School</p>
+            <p><strong>Percentage:</strong> 78%</p>
+            <p><strong>Name:</strong> Sushmashree P S</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box border-yellow">
+            <h5>📘 Pre-University</h5>
+            <p><strong>College:</strong> Shree Vani PU College</p>
+            <p><strong>Percentage:</strong> 75%</p>
+            <p><strong>Course:</strong> PCMB</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box border-cyan overflow-auto">
+        <h4 class="text-info">💡 Who Am I?</h4>
+        <p>I’m <strong>Sushmashree PS</strong>, an enthusiastic software engineer and builder of beautiful, functional web experiences.</p>
+        <p>I find joy in <span class="highlight">problem-solving</span>, building projects, and continuously learning to become a better version of myself.</p>
+
+        <h5 class="mt-3">🛠️ Technical Skills</h5>
+        <ul>
+          <li><strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript</li>
+          <li><strong>Backend:</strong> Python, Java</li>
+          <li><strong>Database:</strong> MySQL</li>
+          <li><strong>Tools:</strong> VS Code, PyCharm, Jupyter Notebook, GitHub</li>
+          <li><strong>Soft Skills:</strong> Communication, Leadership, Teamwork, Creativity</li>
+        </ul>
+
+        <p class="mt-3">🌱 <em>I believe every line of code is a step closer to solving a problem or making a dream real.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About, Projects, Contact (Empty Pages with Display None) -->
+  <section id="about" class="page" style="display: none;">
+    <div class="container py-5">
+      <h2 class="section-heading">About Me</h2>
+      <p>🚧 This page is under construction. Check back soon!</p>
+    </div>
+  </section>
+
+  <section id="projects" class="page" style="display: none;">
+    <div class="container py-5">
+      <h2 class="section-heading">Projects</h2>
+      <p>🚀 Check out my cool creations!</p>
+    </div>
+  </section>
+
+  <section id="contact" class="page" style="display: none;">
+    <div class="container py-5">
+      <h2 class="section-heading">Contact</h2>
+      <p>📧 You can reach me via LinkedIn, GitHub, or email!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sushmashree PS</p>
+    <p>📞 Phone: +91 7019****** | 📧 Email: <a href="mailto:Sushre10@gmail.com">Sushre10@gmail.com</a></p>
+    <p>Thanks for visiting! Let's build something awesome together. 💻</p>
+  </footer>
+</body>
+</html>
